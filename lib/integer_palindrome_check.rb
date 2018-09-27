@@ -1,7 +1,11 @@
 # Returns true if the input positive integer number forms a palindrome. Returns false otherwise.
+# A method to check if the input string is a palindrome.
+# Return true if the string is a palindrome. Return false otherwise.
+# Time complexity - O(n/2) --> O(n)
+# Space complexity is a CONSTANT as the pointer for the variable storing the
+# number is changing but not extra space is occupied by the changing values.
 def is_palindrome(number)
-  # A method to check if the input string is a palindrome.
-  # Return true if the string is a palindrome. Return false otherwise.
+  
     if number == nil || number < 0
       return false
     end
@@ -17,7 +21,6 @@ def is_palindrome(number)
     index = 0
     first_index = 0
     last_index = length - 1
-    check = true
 
     check = true
     while index < length
