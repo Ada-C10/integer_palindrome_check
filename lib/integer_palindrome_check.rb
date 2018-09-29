@@ -12,7 +12,7 @@ def is_palindrome(number)
   # Convert to a string
   number = number.to_s
 
-  # Return false if negative 
+  # Return false if negative
   if number.include?("-")
     return false
   end
@@ -35,3 +35,6 @@ def is_palindrome(number)
   end
   return true
 end
+
+# Time: Going through half of number = O(n)
+# Space: Same number of variables no matter the size of n = O(1) 
