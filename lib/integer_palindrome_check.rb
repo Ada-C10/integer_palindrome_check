@@ -6,28 +6,14 @@ def is_palindrome(number)
     return false
   end
 
-  reversed_num = []
+  reversed_num = 0
+  num_copy = number
 
-  while number > 0
-    last_dig = number % 10
-    number /= 10 #<-- edit the value itself
-
-    reversed_num << last_dig
+  while num_copy > 0
+    last_digit = num_copy % 10
+    reversed_num = reversed_num*10 + last_digit # increase places
+    num_copy /= 10 #<-- edit the value itself
   end
 
-  length = reversed_num.length
-  low_index = 0
-  high_index = (length - 1)
-
-  while low_index <= high_index do
-    if reversed_num[low_index] != reversed_num[high_index]
-      return false
-    end
-
-    low_index += 1
-    high_index -= 1
-  end
-
-  return true #<-- if you survived all that, then congrats you're a palindrome!!!
-
+  return number == reversed_num
 end
