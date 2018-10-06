@@ -13,3 +13,8 @@ def is_palindrome(number)
 
   return original == reverse
 end
+
+# Time complexity: linear
+#  Given a number of n digits, the method has a time complexity of O(n). The number of digits is directly proportionate to the the number of times the loop executes.
+# Space complexity: constant
+#  No matter the value of n, the method will require the same amount of memory.
