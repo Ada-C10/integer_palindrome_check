@@ -1,5 +1,8 @@
 # Returns true if the input positive integer number forms a palindrome. Returns false otherwise.
 
+# Time Complexity: O(n)
+# Space Complexity: O(n)
+
 def num_array_reverse(my_num)
   i = 0
   j = my_num.length - 1
