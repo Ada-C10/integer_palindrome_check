@@ -1,24 +1,6 @@
 # Returns true if the input positive integer number forms a palindrome. Returns false otherwise.
 require 'pry'
-#with array and string
-# def is_palindrome(my_int)
-#   return false if my_int == nil
-#   return true if my_int[1] == nil
-#
-#   array = my_int.split(//)
-#
-#   temp_string = ""
-#
-#   array.each do |char|
-#     if char != " "
-#       temp_string += char
-#     end
-#   end
-#
-#   return temp_string == temp_string.reverse
-# end
 
-#treat int like bytes?
 def is_palindrome(number)
 
   return false if number == nil
