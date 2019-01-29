@@ -36,6 +36,14 @@ describe "integer palindrome check" do
       is_palindrome(-44).must_equal false
     end
 
+    it "number with zeroes in the middle" do
+        is_palindrome(1001111001).must_equal true
+    end
+
+    it "negative: number with zeroes in the middle" do
+        is_palindrome(1001110001).must_equal false    
+    end
+
     it "zero" do
       is_palindrome(0).must_equal true
     end
