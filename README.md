@@ -1,5 +1,5 @@
 # Integer Palindrome Check
-Check if the digits in a non-negtive integer form a palindrome.
+Check if the digits in a non-negative integer form a palindrome.
 
 ## Exercise
 * Design and implement a method that checks if the digits in the input positive integer forms a palindrome. The method returns true if the digits in the input form a palindrome. The method returns false otherwise.
