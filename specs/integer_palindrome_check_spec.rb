@@ -23,7 +23,7 @@ describe "integer palindrome check" do
     it "nil object is not an integer" do
       is_palindrome(nil).must_equal false
     end
-
+  
     it "single digit palindrome" do
       is_palindrome(9).must_equal true
     end
